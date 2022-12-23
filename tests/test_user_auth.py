@@ -31,7 +31,7 @@ class TestUserAuth(BaseCase):
             cookies={"auth_sid": self.auth_sid}
         )
 
-        Assertions.assert_json_value_name(
+        Assertions.assert_json_value_by_name(
             response2,
             "user_id",
             self.user_id_from_auth_method,
@@ -52,7 +52,7 @@ class TestUserAuth(BaseCase):
                 cookies={"auth_sid": self.auth_sid}
             )
 
-        Assertions.assert_json_value_name(
+        Assertions.assert_json_value_by_name(
             response2,
             "user_id",
             0,
