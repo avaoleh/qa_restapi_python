@@ -1,9 +1,11 @@
 from lib.assertions import Assertions
 from lib.base_case import BaseCase
 from lib.my_requests import MyRequests
-
+import allure
+@allure.epic("Edit user case")
 class TestUserEdit(BaseCase):
 
+    @allure.description("This test  #REGISTER, #LOGIN, #EDIT and #GET user data")
     def test_edit_just_created_user(self):
         #REGISTER
         register_data = self.prepare_registration_data()

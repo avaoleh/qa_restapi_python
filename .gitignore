@@ -62,3 +62,4 @@ venv.bak/
 /.pytest_cache
 /__pycache__
 tests/allure_results
+test_results/
